@@ -1,22 +1,33 @@
 // 01-Crie um script que exiba a mensagem "Hello World!" em um alerta no navegador.
 function challenge01(){
     alert("Olá Mundo!")
-
+    
 }
 
 // 02-Crie um script que declare duas variáveis e exiba o resultado da soma entre elas.
 function challenge02(){
     let n1 = parseInt(prompt("Digite o primeiro valor a ser somado: "))
+    if (isNaN(n1)) {
+        
+    }else{
     let n2 = parseInt(prompt("Digite o segundo valor a ser somado: "))
+    }
 
+    if (isNaN(n2)) {
+        
+    }else{
+    
     alert(`O resultado de ${n1} + ${n2} é ${(n1 + n2)}`)
-
+    }
 }
 
 // 03 - Crie um script que declara uma variável e verifique se o seu valor é um número. Se for, exiba a mensagem "É um número", caso contrário, exiba a mensagem "Não é um número".
 function challenge03(){
     let num = prompt("Digite um número: ")
-    if(isNaN(num)){
+    if(num === null){
+
+    }
+    else if(isNaN(num)){
         alert("Não é um número!")
     }else{
         alert("É um número!")
@@ -26,7 +37,10 @@ function challenge03(){
 // 04 - Crie um script que declare uma variável e verifique se o seu valor é uma string. Se for, exiba a mensagem "É uma string", caso contrário, exiba a mensagem "Não é uma string".
 function challenge04(){
     let nome = prompt("Digite uma string")
-    if( isNaN(nome)){
+    if(nome === null){
+
+    }
+    else if( isNaN(nome)){
         alert("É uma string!") 
     }else{
         alert("Não é uma string!")
