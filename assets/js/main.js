@@ -17,8 +17,8 @@ function challenge02(){
 // 03 - Crie um script que declara uma variável e verifique se o seu valor é um número. Se for, exiba a mensagem "É um número", caso contrário, exiba a mensagem "Não é um número".
 function challenge03(){
     let num = prompt("Digite um número: ")
-    if(num === null){
-
+    if(num === "" || num === null){
+ alert("Insira um número!")
     }
     else if(isNaN(num)){
         alert("Não é um número!")
@@ -30,8 +30,8 @@ function challenge03(){
 // 04 - Crie um script que declare uma variável e verifique se o seu valor é uma string. Se for, exiba a mensagem "É uma string", caso contrário, exiba a mensagem "Não é uma string".
 function challenge04(){
     let nome = prompt("Digite uma string")
-    if(nome === null){
-
+    if(nome === "" || nome === null){
+ alert("Insira uma string")
     }
     else if( isNaN(nome)){
         alert("É uma string!") 
@@ -42,16 +42,12 @@ function challenge04(){
 
 // 05 - Crie um script que declara uma variável e verifique se o seu valor é um booleano. Se for, exiba a mensagem "É um booleano", caso contrário, exiba a mensagem "Não é um booleano".
 function challenge05(){
-    let r = prompt("Digite true ou false")
-    let v
-    if (r === "true") {
-        v = true
-    } else if(r === "false"){
-        v = false
-    } else{
-        v = r
+    let r = prompt("Digite um valor para saber e é booleano ou nao")
+    if(r === "" || r === null){
+ alert("Insira um valor!")
     }
-    if (typeof v === "boolean") {
+
+    else if (r === "true" ||  r === "false"  ) {
         alert("É um booleano")
     }else{
         alert("Não é um booleano")
